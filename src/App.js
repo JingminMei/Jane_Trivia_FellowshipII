@@ -32,8 +32,9 @@ function App() {
       <Question
         question={data[currentQuestionNumber].question.text}
         answerChoices={data[currentQuestionNumber].question.choices}
+        setDisplay={setDisplay}
       />
-      <NextQuestion nextQuestion={goToNextQuestion} />
+      <NextQuestion nextQuestion={goToNextQuestion} curQuestion ={currentQuestionNumber}/>
     </div>
   );
 }

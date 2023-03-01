@@ -1,7 +1,7 @@
 function AnswerChoices(props) {
   return <div class="“answer-choice">
     {/* <p>{props.answer}</p> */}
-    {props.answer.map(placeHolder)}
+    {props.answer.map((answer,index)=> <p onClick = {props.setDisplay(index)}>{answer}</p> )}
   </div>;
 }
 

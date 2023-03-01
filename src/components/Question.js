@@ -7,7 +7,8 @@ function Question(props) {
     <div>
       <p>{props.question}</p>
       {/* <p>{props.answerChoices}</p> */}
-      <AnswerChoices answer = {props.answerChoices}/>
+      <AnswerChoices answer = {props.answerChoices} setDisplay = {props.setDisplay}/>
+      
     </div>
   );
 }
