@@ -16,7 +16,7 @@ function App() {
   function questionAnswered() {
     if (answerDisplayed == null) {
       return "Click an answer above.";
-    } else if (answerDisplayed === correctIndex) {
+    } else if (answerDisplayed === getCorrectAnswer(currentQuestionNumber)) {
       return "Correct!";
     } else {
       return "Incorrect, nice try!";
@@ -32,9 +32,11 @@ function App() {
       <Question
         question={data[currentQuestionNumber].question.text}
         answerChoices={data[currentQuestionNumber].question.choices}
+        setDisplay={setDisplay}
       />
-      <NextQuestion nextQuestion={goToNextQuestion} />
-    </div>
+      <NextQuestion nextQuestion={goToNextQuestion} curQuestion ={currentQuestionNumber}/>
+      <p>{questionAnswered()}</p>
+      </div>
   );
 }
 
