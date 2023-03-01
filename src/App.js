@@ -35,7 +35,8 @@ function App() {
         setDisplay={setDisplay}
       />
       <NextQuestion nextQuestion={goToNextQuestion} curQuestion ={currentQuestionNumber}/>
-    </div>
+      <p>{answerDisplayed}</p>
+      </div>
   );
 }
 
