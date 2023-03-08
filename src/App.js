@@ -9,7 +9,7 @@ function App() {
   let [answerDisplayed, setDisplay] = useState(null);
   let [correctIndex, setIndex] = useState(0);
   function getCorrectAnswer(questionNum) {
-    setIndex = data[questionNum].question.correct_choice_index;
+    setIndex(data[questionNum].question.correct_choice_index);
     //setNumber = questionNum;
     return correctIndex;
   }
@@ -23,6 +23,9 @@ function App() {
     }
   }
   function goToNextQuestion() {
+    // if(currentQuestionNumber < ){
+      
+    // }
     setNumber(currentQuestionNumber + 1);
     setDisplay(null);
   }
