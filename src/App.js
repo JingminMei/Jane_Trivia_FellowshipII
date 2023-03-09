@@ -41,7 +41,7 @@ function App() {
         answerChoices={data[currentQuestionNumber].question.choices}
         setDisplay={setDisplay}
       />
-      <NextQuestion nextQuestion={goToNextQuestion} curQuestion ={currentQuestionNumber}/>
+      <NextQuestion nextQuestion={goToNextQuestion} curQuestion ={currentQuestionNumber+1}/>
       <p>{questionAnswered()}</p>
       </div>
   );
