@@ -8,10 +8,14 @@ function App() {
   let [currentQuestionNumber, setNumber] = useState(0);
   let [answerDisplayed, setDisplay] = useState(null);
   let [correctIndex, setIndex] = useState(0);
-  function getCorrectAnswer(questionNum) {
-    setIndex(data[questionNum].question.correct_choice_index);
-    //setNumber = questionNum;
-    return correctIndex;
+  // function getCorrectAnswer(questionNum) {
+  //   setIndex= data[questionNum].question.correct_choice_index;
+  //   //setNumber = questionNum;
+  //   return correctIndex;
+  // }
+
+  function getCorrectAnswer() {
+    return data[currentQuestionNumber].question.correct_choice_index;
   }
   function questionAnswered() {
     if (answerDisplayed == null) {
