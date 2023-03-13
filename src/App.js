@@ -8,12 +8,13 @@ function App() {
   let [currentQuestionNumber, setNumber] = useState(0);
   let [answerDisplayed, setDisplay] = useState(null);
   let [correctIndex, setIndex] = useState(0);
+  const[show, setShow] = useState(false);
   // function getCorrectAnswer(questionNum) {
   //   setIndex= data[questionNum].question.correct_choice_index;
   //   //setNumber = questionNum;
   //   return correctIndex;
   // }
-
+  
   function getCorrectAnswer() {
     return data[currentQuestionNumber].question.correct_choice_index;
   }
@@ -30,8 +31,10 @@ function App() {
     // if(currentQuestionNumber < ){
       
     // }
-    setNumber(currentQuestionNumber + 1);
-    setDisplay(null);
+      setNumber(currentQuestionNumber + 1);
+      setDisplay(null);
+    
+    
   }
   return (
     <div className="app">
@@ -41,7 +44,7 @@ function App() {
         answerChoices={data[currentQuestionNumber].question.choices}
         setDisplay={setDisplay}
       />
-      <NextQuestion nextQuestion={goToNextQuestion} curQuestion ={currentQuestionNumber+1}/>
+      <NextQuestion nextQuestion={goToNextQuestion} curQuestion ={currentQuestionNumber+1} answerDisplayed={answerDisplayed}/>
       <p>{questionAnswered()}</p>
       </div>
   );
