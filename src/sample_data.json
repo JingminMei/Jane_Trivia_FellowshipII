@@ -1,23 +1,23 @@
 [
   {
     "question": {
-      "choices": ["13", "10", "11", "12"],
+      "choices": ["Speak Now", "1989", "Taylor Swift", "Red"],
       "correct_choice_index": 3,
-      "text": "How many months are in a year?"
+      "text": "What is the name of Taylor Swift's first album?"
     }
   },
   {
     "question": {
-      "choices": ["Brooklyn", "Syracuse", "Manhattan", "Bronx"],
+      "choices": ["Kip Thorne", "Stephen Hawking", "Steven Weinberg", "Jocelyn Bell Burnell"],
       "correct_choice_index": 1,
-      "text": "Which location is not a borough of NYC?"
+      "text": "Who was the scientific consultant for movie Interstellar?"
     }
   },
   {
     "question": {
-      "choices": ["So", "S", "Na", "K"],
+      "choices": ["Pulitzer Prize", "The Hugo Award", "John Sargent Sr. First Novel Prize", "Nebula Awards"],
       "correct_choice_index": 2,
-      "text": "What is the symbol for Sodium on the periodic table?"
+      "text": "What award is called the Noble Prize for science fiction?"
     }
   }
 ]
