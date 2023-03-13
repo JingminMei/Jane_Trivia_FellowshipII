@@ -28,7 +28,11 @@ function NextQuestion(props) {
       <button onClick={props.nextQuestion}>Next Question</button>
       <p>Question {props.curQuestion}</p>
     </div>
-  );
+  )
+ }else{
+   return(
+     <p>Question {props.curQuestion}</p>
+   )
  }
   }
 export default NextQuestion;
