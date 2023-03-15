@@ -27,11 +27,13 @@ function NextQuestion(props) {
       
       <button onClick={props.nextQuestion}>Next Question</button>
       <p>Question {props.curQuestion}</p>
+      {/* <p>Tracker: {props.currentCount}</p> */}
     </div>
   )
  }else{
    return(
      <p>Question {props.curQuestion}</p>
+     
    )
  }
   }

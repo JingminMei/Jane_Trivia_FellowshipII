@@ -9,7 +9,8 @@ function App() {
   let [answerDisplayed, setDisplay] = useState(null);
   let [correctIndex, setIndex] = useState(0);
   const[show, setShow] = useState(false);
-  // function getCorrectAnswer(questionNum) {
+  let[currentCount, setCount] = useState(0);
+    // function getCorrectAnswer(questionNum) {
   //   setIndex= data[questionNum].question.correct_choice_index;
   //   //setNumber = questionNum;
   //   return correctIndex;
@@ -22,7 +23,10 @@ function App() {
     if (answerDisplayed == null) {
       return "Click an answer above.";
     } else if (answerDisplayed === getCorrectAnswer(currentQuestionNumber)) {
+      // setCount(currentCount + 1);
       return "Correct!";
+  
+      
     } else {
       return "Incorrect, nice try!";
     }
@@ -46,6 +50,7 @@ function App() {
       />
       <NextQuestion nextQuestion={goToNextQuestion} curQuestion ={currentQuestionNumber+1} answerDisplayed={answerDisplayed}/>
       <p>{questionAnswered()}</p>
+      
       </div>
   );
 }
