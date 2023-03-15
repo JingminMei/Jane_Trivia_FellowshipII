@@ -2,21 +2,21 @@
   {
     "question": {
       "choices": ["Speak Now", "1989", "Taylor Swift", "Red"],
-      "correct_choice_index": 3,
+      "correct_choice_index": 2,
       "text": "What is the name of Taylor Swift's first album?"
     }
   },
   {
     "question": {
       "choices": ["Kip Thorne", "Stephen Hawking", "Steven Weinberg", "Jocelyn Bell Burnell"],
-      "correct_choice_index": 1,
+      "correct_choice_index": 0,
       "text": "Who was the scientific consultant for movie Interstellar?"
     }
   },
   {
     "question": {
       "choices": ["Pulitzer Prize", "The Hugo Award", "John Sargent Sr. First Novel Prize", "Nebula Awards"],
-      "correct_choice_index": 2,
+      "correct_choice_index": 1,
       "text": "What award is called the Noble Prize for science fiction?"
     }
   }
